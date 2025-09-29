@@ -8,6 +8,10 @@ The DIRAC software and services are used by multiple scientific experiments and 
 
 ##CTAO
 
+##ILC/CLIC/FCC
+
+[iLCDirac](ilcdirac.cern.ch) is a multi-community DIRAC instance serving future collider communities from the FCC and linear colliders.
+
 ##JUNO
 
 ##GridPP
