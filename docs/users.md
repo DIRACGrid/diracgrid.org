@@ -16,6 +16,10 @@ The DIRAC software and services are used by multiple scientific experiments and 
 
 ##GridPP
 
+![GridPP logo](assets/images/gridpplogo1.jpg){ align=right width="100" }
+
+[GridPP](https://www.gridpp.ac.uk/) is a collaboration of 15 UK universities, plus Rutherford Appleton Laboratory (RAL) that operates the UK Grid infrastructure. It is part of the [WLCG](https://wlcg.web.cern.ch/) and its focus is on particle physics, neutrino, and adjacent experiments. GridPP maintains the [GridPP DIRAC server](https://dirac.gridpp.ac.uk) as the entrypoint to grid (compute and storage) and cloud resources for a number of scientific communities with UK participation. Further information on the GridPP specific implementation of DIRAC can be found here: [GridPP documentation](https://github.com/ic-hep/gridpp-dirac-users/wiki). If you think your community would benefit from using the GridPP DIRAC instance, please don't hesitate to [contact us](https://www.gridpp.ac.uk/contact/).
+
 ##EGI
 
 ![EGI logo](assets/images/egi-logo.png){ align=right width="100" }
