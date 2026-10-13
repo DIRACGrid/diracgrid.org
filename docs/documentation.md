@@ -3,7 +3,7 @@ The DIRAC project is undergoing a major revision and the new generation of the D
 
 [**DIRAC documentation**](https://dirac.readthedocs.io/en/latest/)
 
-[**DiracX documentation**](https://diracx.io)
+[**DiracX documentation**](https://diracx.diracgrid.org/)
 
 The DIRAC documentaiton is partitioned in several guides.
 
