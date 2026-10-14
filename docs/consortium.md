@@ -1,5 +1,5 @@
 
-##DIRAC Consortium
+## DIRAC Consortium
 
 The Consortium was created in February 2014 to support development and promotion of the DIRAC software. Currently, the Consortium members are
 
