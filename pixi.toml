@@ -19,5 +19,12 @@ mkdocs-material = "*"
 mkdocs = {cmd = "mkdocs serve", description = "Serve the documentation locally with live reload"}
 mkdocs-build = {cmd = "mkdocs build --strict", description = "Build the documentation into site/"}
 
+# Features for running pre-commit hooks
+[feature.pre-commit.dependencies]
+pre-commit = "*"
+[feature.pre-commit.tasks]
+pre-commit = {cmd = "pre-commit", description = "Run pre-commit hooks"}
+
 [environments]
 mkdocs = {features = ["mkdocs"], no-default-feature = true}
+pre-commit = {features = ["pre-commit"], no-default-feature = true}
