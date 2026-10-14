@@ -1,4 +1,3 @@
-
 The DIRAC project is undergoing a major revision and the new generation of the DIRAC software is called DiracX. You can find here links to the original DIRAC and the new DiracX software documentation below:
 
 [**DIRAC documentation**](https://dirac.readthedocs.io/en/latest/)

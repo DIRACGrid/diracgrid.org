@@ -1,4 +1,4 @@
-site_name: DIRAC Project 
+site_name: DIRAC Project
 site_url: https://diracgrid.org/
 site_description: >-
   DIRAC is interware for distributed computing, providing a complete solution
@@ -54,7 +54,7 @@ theme:
       info: octicons/info-16
 
 extra_css:
-  - assets/stylesheets/diracgrid.css      
+  - assets/stylesheets/diracgrid.css
 
 # Content
 nav:
@@ -86,5 +86,3 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
-
-
