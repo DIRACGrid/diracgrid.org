@@ -12,19 +12,23 @@ theme:
   logo: assets/images/Dirac_logo_black-white-negative.png
   favicon: assets/images/Dirac_favicon_logo.svg
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       accent: blue
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: teal
       accent: light green
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        icon: material/weather-night
+        name: Switch to system preference
   font:
     text: Roboto
     code: Roboto Mono
