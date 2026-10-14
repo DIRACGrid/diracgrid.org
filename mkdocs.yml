@@ -68,6 +68,7 @@ extra:
 
 # Plugins
 plugins:
+  - privacy
   - search
 copyright: Copyright &copy; DIRAC Consortium
 
