@@ -2,6 +2,8 @@ site_name: DIRAC Project
 site_url: https://diracgrid.org/
 site_description: Homepage of the DIRAC Project documentation
 site_author: Andrei Tsaregorodtsev
+repo_url: https://github.com/DIRACGrid/diracgrid.org
+edit_uri: edit/main/docs/
 use_directory_urls: false
 
 # Theming
@@ -33,7 +35,17 @@ theme:
     text: Roboto
     code: Roboto Mono
   features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
+    - navigation.tabs.sticky
   icon:
     admonition:
       info: octicons/info-16
