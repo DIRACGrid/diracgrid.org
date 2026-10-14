@@ -1,6 +1,9 @@
 site_name: DIRAC Project 
 site_url: https://diracgrid.org/
-site_description: Homepage of the DIRAC Project documentation
+site_description: >-
+  DIRAC is interware for distributed computing, providing a complete solution
+  for workload and data management on grid, cloud and HPC resources for
+  multiple research communities.
 site_author: Andrei Tsaregorodtsev
 repo_url: https://github.com/DIRACGrid/diracgrid.org
 edit_uri: edit/main/docs/
