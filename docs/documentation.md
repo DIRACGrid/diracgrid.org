@@ -1,11 +1,10 @@
-
 The DIRAC project is undergoing a major revision and the new generation of the DIRAC software is called DiracX. You can find here links to the original DIRAC and the new DiracX software documentation below:
 
 [**DIRAC documentation**](https://dirac.readthedocs.io/en/latest/)
 
 [**DiracX documentation**](https://diracx.diracgrid.org/)
 
-The DIRAC documentaiton is partitioned in several guides.
+The DIRAC documentation is partitioned in several guides.
 
 The [**User Guide**](https://dirac.readthedocs.io/en/latest/UserGuide/index.html) contains all the necessary instructions to install or get access to the DIRAC client software and configure it in order to access a preferred DIRAC service. The guide describes the user interfaces – command line and Web. It also provides a complete list of DIRAC commands. A number of tutorials demonstrate step by step the operations to be performed to set up the client and perform most of the common operations. Finally, a set of How-To items provide answers to commonly asked questions.
 

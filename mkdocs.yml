@@ -1,43 +1,60 @@
-site_name: DIRAC Project 
+site_name: DIRAC Project
 site_url: https://diracgrid.org/
-site_description: Homepage of the DIRAC Project documentation
+site_description: >-
+  DIRAC is interware for distributed computing, providing a complete solution
+  for workload and data management on grid, cloud and HPC resources for
+  multiple research communities.
 site_author: Andrei Tsaregorodtsev
-docs_dir: '.'   
-site_dir: '../_site' 
+repo_url: https://github.com/DIRACGrid/diracgrid.org
+edit_uri: edit/main/docs/
 use_directory_urls: false
 
 # Theming
 theme:
   name: material
   language: en
-  custom_dir: 'overrides/' 
+  custom_dir: docs/overrides/
   logo: assets/images/Dirac_logo_black-white-negative.png
   favicon: assets/images/Dirac_favicon_logo.svg
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       accent: blue
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: teal
       accent: light green
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        icon: material/weather-night
+        name: Switch to system preference
   font:
     text: Roboto
     code: Roboto Mono
-  feature:
-    tabs: true
+  features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
   icon:
     admonition:
       info: octicons/info-16
 
 extra_css:
-  - assets/stylesheets/diracgrid.css      
+  - assets/stylesheets/diracgrid.css
 
 # Content
 nav:
@@ -54,6 +71,7 @@ extra:
 
 # Plugins
 plugins:
+  - privacy
   - search
 copyright: Copyright &copy; DIRAC Consortium
 
@@ -65,8 +83,6 @@ markdown_extensions:
   - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
-
-

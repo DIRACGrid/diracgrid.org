@@ -1,0 +1,30 @@
+[workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "linux-aarch64"]
+# Require a pixi new enough for the v7 lock file (added in 0.68.0), which also covers the
+# relative-duration exclude-newer ("cooldown") below (added in 0.67.0).
+requires-pixi = ">=0.68.0"
+# Supply-chain cooldown: when (re)solving, skip conda and PyPI releases newer than 7 days.
+# This filters fresh candidates at solve time; it does not evict already-locked versions.
+# To fast-track a reviewed release (e.g. a CVE fix), override per package via
+# [exclude-newer] (conda) or [pypi-exclude-newer] (PyPI).
+exclude-newer = "7d"
+
+# Features for generating the documentation
+[feature.mkdocs.dependencies]
+python = "*"
+[feature.mkdocs.pypi-dependencies]
+mkdocs-material = "*"
+[feature.mkdocs.tasks]
+mkdocs = {cmd = "mkdocs serve", description = "Serve the documentation locally with live reload"}
+mkdocs-build = {cmd = "mkdocs build --strict", description = "Build the documentation into site/"}
+
+# Features for running pre-commit hooks
+[feature.pre-commit.dependencies]
+pre-commit = "*"
+[feature.pre-commit.tasks]
+pre-commit = {cmd = "pre-commit", description = "Run pre-commit hooks"}
+
+[environments]
+mkdocs = {features = ["mkdocs"], no-default-feature = true}
+pre-commit = {features = ["pre-commit"], no-default-feature = true}
