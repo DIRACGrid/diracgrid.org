@@ -11,7 +11,7 @@ exclude: ^docs/assets/(css|js|sass|webfonts)/
 
 repos:
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
@@ -44,6 +44,6 @@ repos:
         exclude: pixi\.lock$
 
   - repo: https://github.com/zizmorcore/zizmor-pre-commit
-    rev: v1.30.1
+    rev: v1.32.0
     hooks:
       - id: zizmor
