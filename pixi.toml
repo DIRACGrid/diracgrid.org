@@ -1,14 +1,14 @@
 [workspace]
 channels = ["conda-forge"]
 platforms = ["linux-64", "osx-arm64", "linux-aarch64"]
-# Require a pixi new enough for the v7 lock file (added in 0.68.0), which also covers the
-# relative-duration exclude-newer ("cooldown") below (added in 0.67.0).
-requires-pixi = ">=0.68.0"
+# Require a pixi new enough for the exclude-newer table below (added in 0.84.0).
+requires-pixi = ">=0.84.0"
 # Supply-chain cooldown: when (re)solving, skip conda and PyPI releases newer than 7 days.
 # This filters fresh candidates at solve time; it does not evict already-locked versions.
-# To fast-track a reviewed release (e.g. a CVE fix), override per package via
-# [exclude-newer] (conda) or [pypi-exclude-newer] (PyPI).
-exclude-newer = "7d"
+# To fast-track a reviewed release (e.g. a CVE fix), add an exemption below (conda) or in
+# [workspace.pypi-exclude-newer] (PyPI).
+[workspace.exclude-newer]
+cutoff = "7d"
 
 # Features for generating the documentation
 [feature.mkdocs.dependencies]
